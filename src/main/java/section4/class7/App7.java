@@ -18,7 +18,6 @@ class Worker {
 	}
 	
     public void consumer() throws InterruptedException {
-    	
     	lock.lock();
 		Thread.sleep(2000);
 		System.out.println("Consumer method...");
@@ -29,8 +28,7 @@ class Worker {
 
 public class App7 {
 	
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		Worker worker = new Worker();
 		
 		Thread t1 = new Thread(new Runnable() {

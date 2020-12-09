@@ -17,7 +17,7 @@ class Work implements Runnable {
 		try {
 			TimeUnit.SECONDS.sleep(duration);
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			Thread.currentThread().interrupt();  
 		}
 	}
 }
@@ -29,6 +29,16 @@ public class ThreadPool {
 		
 		for(int i=0; i<100;i++)
 			executor.execute(new Work(i+1));
+		
+		executor.shutdown();
+		
+		try{
+			if(!executor.awaitTermination(1000, TimeUnit.MILLISECONDS)) {
+			    executor.shutdownNow();
+			}
+		} catch(InterruptedException e) {
+			
+		}
 	}
 
 }

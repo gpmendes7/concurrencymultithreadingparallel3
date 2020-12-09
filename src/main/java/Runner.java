@@ -1,4 +1,4 @@
-package section3.class1;
+
 
 class Runner1 {
 	public void execute() {
@@ -14,7 +14,7 @@ class Runner2 {
 	}
 }
 
-public class App1 {
+public class Runner {
 	
 	public static void main(String[] args) {
 

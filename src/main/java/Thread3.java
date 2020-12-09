@@ -1,6 +1,6 @@
-package section4.class1;
 
-public class App1 {
+
+public class Thread3 {
 	
 	public static int counter = 0;
 

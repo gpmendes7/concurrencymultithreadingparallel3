@@ -1,4 +1,4 @@
-package section3.class5;
+
 
 class DaemonWorker implements Runnable {
 	
@@ -31,7 +31,7 @@ class NormalWorker implements Runnable {
 	
 }
 
-public class App5 {
+public class DaemonThread {
 	
 	public static void main(String[] args) {
 		

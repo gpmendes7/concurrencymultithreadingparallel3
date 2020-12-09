@@ -1,4 +1,4 @@
-package section4.class7;
+
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -26,7 +26,7 @@ class Worker {
 	}
 }
 
-public class App7 {
+public class Lock3 {
 	
 	public static void main(String[] args) {	
 		Worker worker = new Worker();

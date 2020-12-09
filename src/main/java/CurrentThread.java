@@ -1,6 +1,6 @@
-package section3.class4;
 
-public class App4 {
+
+public class CurrentThread {
 	
 	public static void main(String[] args) {
 		

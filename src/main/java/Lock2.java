@@ -1,9 +1,9 @@
-package section4.class6;
+
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class App6 {
+public class Lock2 {
 	
 	private static int counter = 0;
 	private static Lock lock = new ReentrantLock();

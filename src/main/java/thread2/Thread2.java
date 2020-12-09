@@ -1,4 +1,4 @@
-package section3.class3;
+package thread2;
 
 class Runner1 extends Thread {
 	@Override
@@ -28,7 +28,7 @@ class Runner2 extends Thread {
 	}
 }
 
-public class App3 {
+public class Thread2 {
 	
 	public static void main(String[] args) {	
 		Thread t1 = new Runner1();

@@ -1,4 +1,4 @@
-package section5.class1;
+package volatileexample;
 
 class Worker implements Runnable {
 	
@@ -26,7 +26,7 @@ class Worker implements Runnable {
 	
 }
 
-public class App1 {
+public class VolatileExample {
 	
 	public static void main(String[] args) {
 		Worker worker = new Worker();

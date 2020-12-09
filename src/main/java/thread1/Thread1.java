@@ -1,4 +1,5 @@
-package section3.class2;
+package thread1;
+
 
 class Runner1 implements Runnable {
 	@Override
@@ -18,7 +19,7 @@ class Runner2 implements Runnable {
 	}
 }
 
-public class App2 {
+public class Thread1 {
 	
 	public static void main(String[] args) {	
 		Thread t1 = new Thread(new Runner1());

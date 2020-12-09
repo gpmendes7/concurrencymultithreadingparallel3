@@ -1,19 +1,22 @@
-package section4.class2;
 
-public class App2 {
+
+public class Lock1 {
 	
 	public static int counter1 = 0;
 	public static int counter2 = 0;
+	
+	private static final Object lock1 = new Object();
+	private static final Object lock2 = new Object();
 
 	public static void increment1() {
-		synchronized (App2.class) {
+		synchronized (lock1) {
 			counter1++;
 		}
 		
 	}
 	
 	public static void increment2() {
-		synchronized (App2.class) {
+		synchronized (lock2) {
 			counter2++;
 		}
 	}
